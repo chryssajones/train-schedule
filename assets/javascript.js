@@ -58,11 +58,11 @@ database.ref().on("child_added", function(childSnapshot, prevChildKey) {
 
   // var now = (moment(convertedDate).trainTimeConverted());
   // var nextArrival = firstTrain + trainFreq
-  var minutesToArrival = moment(trainTimeConverted).endOf('hour').fromNow();
+  var minutesToArrival = moment().endOf('hour').fromNow();
 
 
   $("#tableID > tbody").append("<tr><td>" + trainName + "</td><td>" + trainDest + "</td><td>" +
-  trainFreq + "</td><td>" + trainTimeConverted + "</td><td>" + minutesToArrival);
+  trainFreq + "</td><td>" + firstTrain + "</td><td>" + minutesToArrival);
 
 });
 
