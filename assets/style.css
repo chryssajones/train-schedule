@@ -1,0 +1,11 @@
+body {
+	margin: 40px;
+	background: url(station.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+};
+
+.panel-body {
+	background-color: grey;
+};
