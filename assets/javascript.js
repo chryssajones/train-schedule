@@ -56,7 +56,7 @@ database.ref().on("child_added", function(childSnapshot, prevChildKey) {
   var timeTillNext = moment(firstTrain).add(trainFreq, 'm');
   var trainTimeConverted = moment(timeTillNext).format('MM/DD/YYYY hh:mm a');
 
-  // var now = (moment(convertedDate).toNow());
+  // var now = (moment(convertedDate).trainTimeConverted());
   // var nextArrival = firstTrain + trainFreq
   var minutesToArrival = moment(trainTimeConverted).endOf('hour').fromNow();
 
